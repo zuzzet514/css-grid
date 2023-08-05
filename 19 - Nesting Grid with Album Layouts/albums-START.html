@@ -97,6 +97,33 @@
 
 
   <style>
+      .albums {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
+
+      .album {
+        background: rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        height: 200px;
+        display: grid;
+        padding: 20px;
+        grid-gap: 20px;
+        border-radius: 5px;
+        grid-template-columns: 150px 1fr; /* no sabía como hacer que la imagen se quedara fija, había puesto "1fr 1fr" */
+        align-items: center;
+        color: white;
+        font-weight: 100;
+      }
+
+      .album__details {
+
+      }
+
+      .album__artwork {
+        width: 100%;
+      }
   </style>
 </body>
 
